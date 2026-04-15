@@ -59,7 +59,7 @@ class GoldenMasterTest {
         "Backstage passes to a TAFKAL80ETC concert, 14, 21\n" +
         "Backstage passes to a TAFKAL80ETC concert, 9, 50\n" +
         "Backstage passes to a TAFKAL80ETC concert, 4, 50\n" +
-        "Conjured Mana Cake, 2, 5\n" +
+        "Conjured Mana Cake, 2, 4\n" +
         "\n" +
         "-------- day 2 --------\n" +
         "name, sellIn, quality\n" +
@@ -71,7 +71,7 @@ class GoldenMasterTest {
         "Backstage passes to a TAFKAL80ETC concert, 13, 22\n" +
         "Backstage passes to a TAFKAL80ETC concert, 8, 50\n" +
         "Backstage passes to a TAFKAL80ETC concert, 3, 50\n" +
-        "Conjured Mana Cake, 1, 4\n" +
+        "Conjured Mana Cake, 1, 2\n" +
         "\n" +
         "-------- day 3 --------\n" +
         "name, sellIn, quality\n" +
@@ -83,7 +83,7 @@ class GoldenMasterTest {
         "Backstage passes to a TAFKAL80ETC concert, 12, 23\n" +
         "Backstage passes to a TAFKAL80ETC concert, 7, 50\n" +
         "Backstage passes to a TAFKAL80ETC concert, 2, 50\n" +
-        "Conjured Mana Cake, 0, 3\n" +
+        "Conjured Mana Cake, 0, 0\n" +
         "\n" +
         "-------- day 4 --------\n" +
         "name, sellIn, quality\n" +
@@ -95,7 +95,7 @@ class GoldenMasterTest {
         "Backstage passes to a TAFKAL80ETC concert, 11, 24\n" +
         "Backstage passes to a TAFKAL80ETC concert, 6, 50\n" +
         "Backstage passes to a TAFKAL80ETC concert, 1, 50\n" +
-        "Conjured Mana Cake, -1, 1\n" +
+        "Conjured Mana Cake, -1, 0\n" +
         "\n" +
         "-------- day 5 --------\n" +
         "name, sellIn, quality\n" +

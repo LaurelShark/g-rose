@@ -29,6 +29,12 @@ class StrategyResolverTest {
     }
 
     @Test
+    void conjuredResolvesToConjuredItemStrategy() {
+        ItemUpdateStrategy strategy = StrategyResolver.resolve(new Item("Conjured Mana Cake", 0, 0));
+        assertTrue(strategy instanceof ConjuredItemStrategy);
+    }
+
+    @Test
     void unknownItemResolvesToStandardStrategy() {
         ItemUpdateStrategy strategy = StrategyResolver.resolve(new Item("Random Thing", 0, 0));
         assertTrue(strategy instanceof StandardItemStrategy);

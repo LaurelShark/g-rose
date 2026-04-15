@@ -110,14 +110,15 @@ class GildedRoseTest {
         assertEquals(expectedQuality, app.items[0].quality);
     }
 
-    // -- Conjured (currently behaves as normal item — no special handling yet) --
+    // -- Conjured (degrades twice as fast as normal items) --
 
     @ParameterizedTest(name = "Conjured: sellIn={0}, quality={1} -> sellIn={2}, quality={3}")
     @CsvSource({
-        "10, 20, 9, 19",
-        "0, 20, -1, 18",
+        "10, 20, 9, 18",
+        "0, 20, -1, 16",
         "10, 0, 9, 0",
         "0, 1, -1, 0",
+        "5, 1, 4, 0",
     })
     void conjuredItem(int sellIn, int quality, int expectedSellIn, int expectedQuality) {
         Item[] items = new Item[] { new Item("Conjured Mana Cake", sellIn, quality) };
