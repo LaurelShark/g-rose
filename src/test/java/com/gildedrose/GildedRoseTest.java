@@ -8,8 +8,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class GildedRoseTest {
 
-    // -- Normal items --
-
     @ParameterizedTest(name = "Normal: sellIn={0}, quality={1} -> sellIn={2}, quality={3}")
     @CsvSource({
         "10, 20, 9, 19",
@@ -30,8 +28,6 @@ class GildedRoseTest {
         assertEquals(expectedSellIn, app.items[0].sellIn);
         assertEquals(expectedQuality, app.items[0].quality);
     }
-
-    // -- Aged Brie --
 
     @ParameterizedTest(name = "Aged Brie: sellIn={0}, quality={1} -> sellIn={2}, quality={3}")
     @CsvSource({
@@ -55,8 +51,6 @@ class GildedRoseTest {
         assertEquals(expectedQuality, app.items[0].quality);
     }
 
-    // -- Sulfuras --
-
     @ParameterizedTest(name = "Sulfuras: sellIn={0}, quality={1} -> unchanged")
     @CsvSource({
         "0, 80, 0, 80",
@@ -71,8 +65,6 @@ class GildedRoseTest {
         assertEquals(expectedSellIn, app.items[0].sellIn);
         assertEquals(expectedQuality, app.items[0].quality);
     }
-
-    // -- Backstage passes --
 
     @ParameterizedTest(name = "Backstage: sellIn={0}, quality={1} -> sellIn={2}, quality={3}")
     @CsvSource({
@@ -110,8 +102,6 @@ class GildedRoseTest {
         assertEquals(expectedQuality, app.items[0].quality);
     }
 
-    // -- Conjured (degrades twice as fast as normal items) --
-
     @ParameterizedTest(name = "Conjured: sellIn={0}, quality={1} -> sellIn={2}, quality={3}")
     @CsvSource({
         "10, 20, 9, 18",
@@ -127,8 +117,6 @@ class GildedRoseTest {
         assertEquals(expectedSellIn, app.items[0].sellIn);
         assertEquals(expectedQuality, app.items[0].quality);
     }
-
-    // -- General behavior --
 
     @Test
     void itemNameDoesNotChange() {
